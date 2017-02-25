@@ -1,0 +1,11 @@
+---
+
+- name: Install i3 keyring
+  become: true
+  become_user: root
+  apt: name=sur5r-keyring state=present allow_unauthenticated=yes
+
+- name: Install i3
+  become: true
+  become_user: root
+  apt: name=i3 state=present allow_unauthenticated=yes

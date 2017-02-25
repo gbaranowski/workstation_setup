@@ -1,0 +1,8 @@
+---
+
+- include: set_ppa.yml
+- include: install_git.yml
+- include: install_i3.yml
+- include: install_browsers.yml
+- include: install_pycharm.yml
+- include: install_zsh.yml

@@ -1,0 +1,19 @@
+---
+- hosts: local
+  tasks:
+  - name: Add PPA for i3
+     - apt_repository
+       repo: deb http://debian.sur5r.net/i3/ trusty universe
+       state: present
+       update_cache: yes
+
+   - name: Install I3
+     apt: pkg=i3 state=installed
+
+#   - apt_repository:
+#     repo: deb http://archive.canonical.com/ubuntu hardy partner
+#     state: present
+#
+#   - name: Install Nginx
+#     apt: pkg=nginx state=installed update_cache=true
+#

@@ -1,0 +1,4 @@
+- name: Install git
+  become: true
+  become_user: root
+  apt: name=git state=present 

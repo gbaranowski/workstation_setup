@@ -1,0 +1,5 @@
+# Setup dependencies
+---
+- name: Add i3 repo
+  apt_repository: repo='deb http://debian.sur5r.net/i3/ xenial universe'
+

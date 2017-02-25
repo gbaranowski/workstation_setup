@@ -1,0 +1,12 @@
+---
+- name: Set ppa pycharm
+  apt_repository: repo='ppa:mystic-mirage/pycharm'
+
+
+
+
+
+- name: Install pycharm
+  become: true
+  become_user: root
+  apt: name=pycharm state=present
