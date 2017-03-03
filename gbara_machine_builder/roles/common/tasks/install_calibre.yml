@@ -1,0 +1,13 @@
+- name: Download calibre installer
+  get_url:
+    url: "https://download.calibre-ebook.com/linux-installer.py"
+    dest: calibre_installer.py
+
+- name: Run calibre installer
+  shell: python -c "import sys; main=lambda:sys.stderr.write('Download failed\n'); exec(sys.stdin.read()); main()
+
+
+- name: Remove calibre installer file
+  file:
+    state: absent
+    path: calibre_installer.py
