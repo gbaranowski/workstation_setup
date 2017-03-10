@@ -1,6 +1,9 @@
 ---
-- hosts: local
-  tasks:
-   - name: Install Nginx
-     apt: pkg=nginx state=installed update_cache=true
+# This playbook deploys the whole application stack in this site.
 
+- name: apply common configuration to all nodes
+  hosts: all
+  remote_user: root
+
+  roles:
+    - common
