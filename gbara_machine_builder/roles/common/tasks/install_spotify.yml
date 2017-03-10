@@ -13,7 +13,6 @@
     update_cache: yes
 
 
-
 - name: Install spotify
   become: true
   become_user: root
