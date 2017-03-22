@@ -1,8 +1,0 @@
-# Setup dependencies
-
----
-- hosts: localhost
-  user: root
-
-  tasks:
-    - apt_repository: repo='deb http://debian.sur5r.net/i3/ trusty universe'
