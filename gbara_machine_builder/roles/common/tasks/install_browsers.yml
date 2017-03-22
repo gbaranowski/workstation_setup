@@ -1,17 +1,17 @@
 ---
 
-- name: Install i3 keyring
+- name: Install chromium-browser
   become: true
   become_user: root
   apt: name=chromium-browser state=present
 
-- name: install i3
+- name: install vlc
   become: true
   become_user: root
   apt: name=vlc state=present 
 
 
-- name: install i3
+- name: install browser-plugin-vlc
   become: true
   become_user: root
   apt: name=browser-plugin-vlc state=present 

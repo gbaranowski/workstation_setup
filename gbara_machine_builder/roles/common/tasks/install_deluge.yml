@@ -1,0 +1,6 @@
+---
+
+- name: install i3
+  become: true
+  become_user: root
+  apt: name=deluge state=present

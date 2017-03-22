@@ -7,3 +7,4 @@
 - include: install_pycharm.yml
 - include: install_zsh.yml
 - include: install_spotify.yml
+- include: install_deluge.yml
