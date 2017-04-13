@@ -8,3 +8,4 @@
 - include: install_zsh.yml
 - include: install_spotify.yml
 - include: install_deluge.yml
+- include: install_python.yml

@@ -1,0 +1,122 @@
+# server
+set jid = user@domain.com
+set username = user@domain.com
+set nickname = username
+set server = chat.server.com
+set port = 5223
+set password = password_here
+
+
+
+# colors
+set color_status = white
+set nick_colors = red green blue magenta cyan
+color muc * on
+set muc_disable_nick_hl = 0
+
+# misc
+set log_win_height = 2
+set ignore_self_presence = 1
+
+# SSL/TLS options:
+set ssl = 0
+set tls = 0
+
+# History
+set cmdhistory_lines = 250
+set logging = 1
+set logging_dir = ~/.mcabber/histo/
+set logging_ignore_status = 1
+set statefile = ~/.mcabber/mcabber.state
+set max_history_blocks = 8
+
+# Set log_muc_conf to 1 to enable MUC chatrooms logging (default = 0)
+set log_muc_conf = 1
+
+# Modules
+set modules_dir = /usr/local/lib/mcabber/
+
+# FIFO
+set fifo_name = ~/.mcabber/mcabber.fifo
+set fifo_hide_commands = 0
+set fifo_ignore = 0
+module load fifo
+
+# Status messages
+set message_autoaway = Auto-away (idle)
+
+# Escape timeout delay (ESCDELAY)
+set escdelay = 50
+
+# Colors
+set color_info         = brightyellow
+set color_msgin        = white
+set color_msgout       = 255
+set color_msghl        = yellow
+set color_status       = 255
+set color_bgstatus     = 234
+#set color_bgstatus     = 24
+set color_background   = 16
+set color_roster       = white
+set color_bgrostersel  = black
+set color_rostersel    = yellow
+set color_rosternewmsg = red
+#set color_background   = black
+#set color_general      = white
+#set color_status       = white
+#set color_rosterselmsg = red
+#set color_readmark     = red
+
+# Style
+set roster_width=17
+
+# Aliases
+alias me = say /me
+alias online   = status online
+alias away     = status away
+alias dnd      = status dnd
+alias notavail = status notavail
+alias u = room join ui@conference.chat.analytemedia.com
+alias g = room join gauntlet@conference.chat.analytemedia.com
+alias rs = roster search
+
+# Events
+set events_command = ~/.mcabber/eventcmd
+set events_ignore_active_window = 0
+set event_log_files = 1
+set event_log_dir = ~/.mcabber/event_files
+set eventcmd_use_nickname = 0
+set url_regex = "(((https?|ftps?|nntp)://)|www[.][-a-z0-9.]+|(mailto:|news:))(%[0-9A-F]{2}|[-_.!~*';/?:@&=+$,#[:alnum:]])+"
+module load urlregex
+
+# Key bindings
+# Ctrl-q (17), alt-n bound to /roster unread_next
+bind 17 = roster unread_next
+bind M110 = roster unread_next
+# F5 (269) bound to /roster toggle_offline  (centericq-like, IIRC)
+bind 269 = roster toggle_offline
+# Ctrl-Up/Ctrl-Down bound to /buffer up/down  (like Ctrl-p/Ctrl-n)
+bind 2 = buffer up
+bind 6 = buffer down
+# PgUp/Down
+bind 339 = buffer up
+bind 338 = buffer down
+# ALT-[/] to nav the roster
+bind M91 = roster up
+bind M93 = roster down
+# ctrl-z
+bind 26 = roster unread_next
+# alt-del
+bind M127 = iline word_bdel
+#alt-/
+bind M47 = roster toggle
+#alt-up
+bind M259 = roster top
+#alt-down
+bind M258 = roster bottom
+bind M122 = roster alternate
+#alt-shift-G
+bind M71 = roster search gauntlet
+bind M85 = roster search ui
+# Alt-m to switch to/from multi-line mode
+bind M109 = msay toggle

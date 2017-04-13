@@ -1,0 +1,13 @@
+---
+
+- name: install
+  become: true
+  become_user: root
+  apt: name=mcabber state=present
+  register: presence
+
+- include_vars: vault.yml
+
+- name: set config
+  template: src=mcabberrc_ssledz.j2 dest=~/.mcabberrc
+#  when: presence.changed

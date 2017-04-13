@@ -1,0 +1,5 @@
+pip_extra_packages:
+  - http://cdn.mysql.com/Downloads/Connector-Python/mysql-connector-python-1.1.6.zip#md5=026e4a4b8731da33d73f0542349594fd
+  - https://pypi.python.org/packages/source/M/MySQL-python/MySQL-python-1.2.5.zip#md5=654f75b302db6ed8dc5a898c625e030c
+  - https://pypi.python.org/packages/source/x/xmla/xmla-0.7.2.tar.gz#md5=1714e2f508556ce4e0dee3684eb7428c
+  - https://pypi.python.org/packages/a4/70/d07a28ea595953acacc128a6efe25696be20b2e1d3e3c81ef4b55410b488/ipython-5.3.0.tar.gz#md5=26c175feb92f1c9033968432a93845ea

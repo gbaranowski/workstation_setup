@@ -12,10 +12,10 @@
   pip: name={{ item }} executable=pip
   with_items: "{{ pip_extra_packages | default ({}) }}"
 
-- name: Install extra pip packages for Python 3+ in /opt/pyenv (DWH)
+- name: Install extra pip packages for Python 3+
   pip: name={{ item }} executable=/usr/local/bin/pip3
   with_items: "{{ pip3_extra_packages | default ({}) }}"
 
-- name: Install basic data processing packages for python.
-  include: basic_data_processing_packages.yml
-
+#- name: Install basic data processing packages for python.
+#  include: basic_data_processing_packages.yml
+#

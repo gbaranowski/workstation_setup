@@ -1,0 +1,4 @@
+---
+server_name: jabber.something.com
+jid: myname@jabber.something.com
+jid_pass: password123
