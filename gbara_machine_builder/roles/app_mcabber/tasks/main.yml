@@ -9,5 +9,10 @@
 - include_vars: vault.yml
 
 - name: set config
-  template: src=mcabberrc_ssledz.j2 dest=~/.mcabberrc
-#  when: presence.changed
+  template: src=mcabberrc.j2 dest=~/.mcabberrc
+
+- name:
+  file:
+    path: ~/.mcabber/histo
+    mode: 0700
+    state: directory

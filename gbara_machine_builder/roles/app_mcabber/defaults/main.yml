@@ -1,2 +1,3 @@
 ---
-# defaults file for app_mcabber
+
+mcabber_logging_dir = ~/.mcabber/histo/
