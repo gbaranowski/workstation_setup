@@ -1,4 +1,7 @@
 ---
+- include_vars: defaults/paths.yml
+- include_vars: vault.yml
+- include_vars: main.yml
 
 - name: install
   become: true
@@ -6,7 +9,6 @@
   apt: name=mcabber state=present
   register: presence
 
-- include_vars: vault.yml
 
 - name: set config
   template: src=mcabberrc.j2 dest=~/.mcabberrc

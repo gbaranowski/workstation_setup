@@ -1,0 +1,8 @@
+---
+mcabber_base_dir: '~/.mcabber'
+mcabber_logging_dir: '{{ mcabber_base_dir }}/histo/'
+mcabber_statefile: '{{ mcabber_base_dir }}/mcabber.state'
+mcabber_events_command: '{{ mcabber_base_dir }}/eventcmd'
+mcabber_event_log_dir: '{{ mcabber_base_dir }}/event_files'
+mcabber_fifo_name: '{{ mcabber_base_dir }}/mcabber.fifo'
+mcabber_tracelog_file: '{{ mcabber_base_dir }}/mcabber.log'

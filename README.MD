@@ -15,3 +15,9 @@ sudo apt-get install ansible
 ```bash
 sudo ansible-playbook -i 'localhost,' -c local create_workstation.yml -f 10
 ```
+
+#### ToDo
+
+- [ ] Pycharm
+- [ ] CryptoCat
+
